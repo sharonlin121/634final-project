@@ -1,0 +1,155 @@
+/* Reset and Basic Styling */
+/* Intro Photo Styling */
+.intro-photo img {
+  width: 200px; /* Reduced from 300px */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container Styling */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+header img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 20px 0;
+}
+
+header h1 {
+  font-size: 2.2em;
+  color: #333;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #666;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+/* Navigation Styling */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  color: #007acc;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background-color: #007acc;
+  color: #ffffff;
+}
+
+/* Section Titles */
+h2 {
+  color: #007acc;
+  margin: 20px 0;
+  font-size: 1.8em;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Section Content */
+section {
+  margin-bottom: 25px;
+}
+
+section p {
+  font-size: 1em;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Lists and Content Styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+ul li {
+  padding-left: 20px;
+  position: relative;
+  margin: 8px 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+ul li::before {
+  content: "•";
+  color: #007acc;
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+}
+
+strong {
+  color: #333;
+}
+
+/* Contact and Footer Styling */
+a.button {
+  display: inline-block;
+  color: #fff;
+  background-color: #007acc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+a.button:hover {
+  background-color: #005ea6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  nav a {
+    margin: 5px;
+  }
+}
